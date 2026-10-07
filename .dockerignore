@@ -1,0 +1,26 @@
+# Git and VCS
+.git
+.gitignore
+
+# IDE configurations
+.idea
+.vscode
+*.iml
+*.ipr
+*.iws
+.settings
+.project
+.classpath
+
+# Build artifacts and compiled binaries
+target
+bin
+out
+*.class
+*.jar
+*.war
+
+# Temporary and log files
+*.log
+*.tmp
+*.swp

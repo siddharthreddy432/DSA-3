@@ -1,0 +1,10 @@
+# Indicator of Compromise (IoC) Database
+# Format: id|type|value|description|severity
+IOC-001|COMMAND|powershell -enc|Suspicious encoded PowerShell execution|HIGH
+IOC-002|COMMAND|certutil -urlcache|Suspicious certutil payload download|HIGH
+IOC-003|TOOL|mimikatz|Credential dumping tool indicator|CRITICAL
+IOC-004|PROTOCOL|IPC$|Remote SMB named pipe lateral movement|MEDIUM
+IOC-005|FILE|cobaltstrike.beacon|Known C2 beacon payload artifact|CRITICAL
+IOC-006|COMMAND|whoami /priv|Privilege enumeration command|LOW
+IOC-007|PATTERN|vssadmin delete shadows|Volume shadow copy deletion defense evasion|CRITICAL
+IOC-008|NETWORK|198.51.100.44|Suspicious command and control IP address|HIGH
